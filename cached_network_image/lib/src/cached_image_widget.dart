@@ -244,9 +244,7 @@ class CachedNetworkImage extends StatelessWidget {
           imageRenderMethodForWeb: imageRenderMethodForWeb,
           maxWidth: maxWidthDiskCache,
           maxHeight: maxHeightDiskCache,
-          errorListener: (e) {
-            debugPrint(e.toString());
-          },
+          errorListener: () {},
         ),
         super(key: key);
 
